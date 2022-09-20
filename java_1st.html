@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java_1st</title>
+
+    
+    <!--Internal styles for somestyling-->
+    <style>
+    *{margin: 0;
+        padding:0;
+    }
+
+    body{background-color: lightblue;
+        font-family: cursive;}
+
+    nav{background-color: black;}
+
+    nav ul{padding: 10px;
+        display: flex;
+        justify-content: right;
+        list-style: none;}
+
+    nav ul li{padding: 10px 20px;}
+
+    nav ul li a{text-decoration: none;
+        font-size: 20px;
+        color: lightblue;}
+
+    nav ul li:hover{background-color:rgb(92, 140, 158);
+         transition: 0.8s;}
+
+
+    /*some media Query for responsive design */
+
+    @media only screen and (max-width:900px){
+         nav ul{height: 250px;
+        flex-direction: column;
+        text-align: center;}
+        }
+
+    #h1{padding: 30px;}
+
+    #footer{border: 2px solid black;
+                margin: 30px;
+                padding: 10px;
+                border-radius: 10px;  
+          }    
+    #sndf{border: 2px solid black;
+                margin: 30px;
+                padding: 10px; 
+                border-radius: 10px;}
+
+    #rd{border: 2px solid black;
+                margin: 30px;
+                padding: 10px; 
+                border-radius: 10px;}
+
+    #flist{padding: 10px;
+        display: flex;
+
+        justify-content: space-evenly;
+        list-style: none;}
+
+    #flist a{color: lightblue;
+        text-decoration: none;
+        margin: 60px;}
+
+        </style>
+
+
+
+
+
+</head>
+<body>
+    <!--Navigation with list items-->
+    <nav>
+        <ul>
+            <li><a href="#" id="Home"></a></li>
+            <li><a href="#" id="Services"></a></li>
+            <li><a href="#" id="Products"></a></li>
+            <li><a href="#" id="About Us"></a></li>
+            <li><a href="#" id="Contact Us"></a></li>
+        </ul>
+    </nav>
+
+    <!--heading for detail about content-->
+    <h1 id="h1"></h1>
+    <p id="p1"></p>
+    <h2 id="h2">
+        </h2>
+        <div id="div_list">
+        <ol >
+            <li><h3 id="1st_item"></h3></li>
+            <li><h3  id="2nd_item"></h3></li>
+            <li><h3  id="3rd_item"></h3></li>
+        </ol>
+    </div>
+
+
+        <div id="footer"><strong> 1.The inline styling </strong> is done with help of the style attribute.
+            The style attribute can be added to the HTML element to which the style has to be
+            applied. And styles can be specified as the value of the style attribute.
+            </div>
+
+            <div id="sndf"><strong>2.For Internal CSS</strong> In order to reuse the same styles within the same page or to apply same styles for
+                multiple elements styles can be given inside the style tags inside the head
+                head part of the document. style style tags inside the head
+                head part of the document
+            </div>
+            <div id="rd"><strong>3. External style sheet</strong> is generally used when the same style has to be applied in
+                multiple pages.
+                The syntax will be similar to the internal CSS/ Embedded CSS, but the styles will be
+                included from the external sheet which will be connected to the HTML file by linking the
+                external style sheet.
+                The external style sheet can be linked with the help of link tag.
+                The external style sheet included should have the extension as .css.
+
+            </div>
+    <script src="java1.js"></script>
+    
+    
+</body>
+</html>
